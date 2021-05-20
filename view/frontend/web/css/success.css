@@ -1,0 +1,60 @@
+#zero1-advanced-success {float: left; width: 100%;}
+#zero1-advanced-success .intro {margin: 0 !important;}
+#zero1-advanced-success .intro h1 {margin-bottom: 20px;}
+#zero1-advanced-success .intro h1 span {text-transform: capitalize;}
+#zero1-advanced-success .content-block {float: left; width: 100%; margin: 20px 0; }
+#zero1-advanced-success .order-information {border: 1px solid #cfcfcf; margin: 20px 0;}
+#zero1-advanced-success .order-information div h3 {margin: 5px 0 20px 0;}
+#zero1-advanced-success .order-information div p span {font-weight: bold;}
+#zero1-advanced-success .order-information div {width: 100%; float: left; border-right: 1px solid #cfcfcf; padding: 0 2%; margin: 2% 0;}
+#zero1-advanced-success .order-information div:last-child {border: none;}
+#zero1-advanced-success .three-col div {width: 27.9%;}
+#zero1-advanced-success .two-col div {width: 45%;}
+#zero1-advanced-success .one-col div {width: 100%;}
+#zero1-advanced-success .cms-block {margin: 2% 0;}
+#zero1-advanced-success .social-sharing {text-align: center; margin: 2% 0;}
+#zero1-advanced-success .newsletter h3 {margin: 6px 20px 20px 0;}
+#zero1-advanced-success .newsletter .newsletter-wrap > .newsletter {width: auto;}
+
+#zero1-advanced-success .related-products-list {border: 1px solid #cfcfcf; padding: 0 0 20px 0; border-width: 1px 0;}
+#zero1-advanced-success .related-products-list h3 {margin-bottom: 20px;}
+#zero1-advanced-success .related-products-list ul {float: left; margin: 0; padding: 0;}
+#zero1-advanced-success .related-products-list ul li {list-style: none; width: 14%; float: left; border: 1px solid #cfcfcf; padding: 10px; margin: 0 0 1% 1%;}
+#zero1-advanced-success .related-products-list ul li h5 {min-height: 35px;}
+#zero1-advanced-success .related-products-list ul li:nth-child(7n+7), #zero1-advanced-success .related-products-list ul li:first-child {margin: 0;}
+
+@media screen and (max-width: 1242px) {
+    #zero1-advanced-success .related-products-list ul li {width: 13.5%;}
+}
+@media screen and (max-width: 1024px) {
+    #zero1-advanced-success .related-products-list ul li {width: 16.8%;}
+    #zero1-advanced-success .related-products-list ul li:nth-child(7n+7) {margin: 0 0 1% 1%;}
+    #zero1-advanced-success .related-products-list ul li:nth-child(6n+6) {margin: 0;}
+}
+@media screen and (max-width: 960px) {
+    #zero1-advanced-success .related-products-list ul li {width: 21.2%;}
+    #zero1-advanced-success .related-products-list ul li:nth-child(6n+6) {margin: 0 0 1% 1%;}
+    #zero1-advanced-success .related-products-list ul li:nth-child(5n+5) {margin: 0;}
+}
+
+@media screen and (max-width: 768px) {
+    #zero1-advanced-success .three-col div, #zero1-advanced-success .two-col div {width: 45.6%;}
+    #zero1-advanced-success .three-col div:nth-of-type(2), #zero1-advanced-success .two-col div:nth-of-type(2) {border: none;}
+    #zero1-advanced-success .three-col div:nth-of-type(3) {width: 95%; border-top: 1px solid #cfcfcf; margin: 0 2%; padding: 2% 0;}
+    #zero1-advanced-success .newsletter .newsletter-wrap {width: 90%;}
+    #zero1-advanced-success .related-products-list ul li {width: 27.8%;}
+    #zero1-advanced-success .related-products-list ul li:nth-child(7n+7) {margin: 0;}
+    #zero1-advanced-success .related-products-list ul li:nth-child(5n+5) {margin: 0 0 1% 1%;}
+    #zero1-advanced-success .related-products-list ul li:nth-child(4n) {margin: 0;}
+    #zero1-advanced-success .related-products-list ul li:nth-child(8n) {margin: 0 0 1% 1%;}
+}
+
+@media screen and (max-width: 480px) {
+    #zero1-advanced-success .order-information div {margin: 0 !important; padding: 20px !important; width: auto !important; float: none; border: 1px solid #cfcfcf !important; border-width: 0 0 1px 0 !important;}
+    #zero1-advanced-success .order-information div:last-child {border: none !important;}
+    #zero1-advanced-success .newsletter .newsletter-wrap {width: 100%;}
+    #zero1-advanced-success .related-products-list ul li {width: 42%; margin: 0 0 3% 0 !important;}
+    #zero1-advanced-success .related-products-list ul li:nth-child(2n+2) {float: right;}
+    #zero1-advanced-success .related-products-list ul li:nth-child(4n+4) {margin: 0 0 1% 1%;}
+    #zero1-advanced-success .related-products-list ul li:nth-child(3n+3) {margin: 0;}
+}

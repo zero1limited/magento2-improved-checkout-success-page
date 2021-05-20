@@ -1,0 +1,17 @@
+{
+    "name": "zero1\/module-improved-checkout-success-page",
+    "description": "N\/A",
+    "type": "magento2-module",
+    "version": "1.0.10",
+    "license": [
+        "commercial"
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Zero1\\ImprovedCheckoutSuccessPage\\": ""
+        }
+    }
+}
