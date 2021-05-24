@@ -1,8 +1,8 @@
 {
-    "name": "zero1\/module-improved-checkout-success-page",
-    "description": "N\/A",
+    "name": "zero1/module-improved-checkout-success-page",
+    "description": "N/A",
     "type": "magento2-module",
-    "version": "1.0.10",
+    "version": "1.0.0",
     "license": [
         "commercial"
     ],
