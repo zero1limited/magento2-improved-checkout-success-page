@@ -2,7 +2,7 @@
 
 For Magento 2.0.x, 2.1.x, 2.2.x, 2.3.x and 2.4.x
 
-## Benefits
+## Benefits of this module
 
 The checkout success page is the final step in the customers purchase cycle. It may seem like the success page is the least important part of the customer's shopping experience on the website, but it's actually very important.
 It’s the make or break page when it comes to turning first-time shoppers into occasional customers, and occasional customers into loyal ones.
