@@ -4,7 +4,7 @@
         <catalog>
             <improved_checkout_success_page>
                 <general>
-                    <enable>1</enable>
+                    <enable>0</enable>
                     <page_title>Thank you for your order %customer_name%!</page_title>
                 </general>
                 <order_information_row>
