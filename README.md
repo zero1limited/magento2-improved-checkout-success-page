@@ -1,4 +1,4 @@
-# magento2-ImprovedCheckoutSuccessPage
+# Magento 2 - Improved Checkout Success Page
 
 For Magento 2.0.x, 2.1.x, 2.2.x, 2.3.x and 2.4.x
 
@@ -35,7 +35,7 @@ Before you go into production with this module, we recommend that you check with
 ## Installation
 
 ```
-composer require zero1/improved-checkout-success-page
+composer require zero1/module-improved-checkout-success-page
 ```
 
 Support
