@@ -1,6 +1,6 @@
 {
     "name": "zero1/module-improved-checkout-success-page",
-    "description": "N/A",
+    "description": "Improves the functionality of the Magento 2 Checkout Success page",
     "type": "magento2-module",
     "version": "1.0.1",
     "license": [
