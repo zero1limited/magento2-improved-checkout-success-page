@@ -7,10 +7,6 @@
             <resource>Magento_Checkout::checkout</resource>
             <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
                 <label>General</label>
-                <field id="enable" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
-                    <label>Enable</label>
-                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
-                </field>
                 <field id="page_title" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
                     <label>Page Title</label>
                     <comment>
@@ -19,23 +15,14 @@
                             %customer_name%
                         ]]>
                     </comment>
-                    <depends>
-                        <field id="enable">1</field>
-                    </depends>
                 </field>
                 <field id="use_chekout_name_for_guest_customers" translate="label" type="select" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
                     <label>Use Checkout Name For Guest Customers</label>
                     <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
                     <comment>Guest customers are addresses as 'Guest'. This will use the name that the user submitted at the checkout</comment>
-                    <depends>
-                        <field id="enable">1</field>
-                    </depends>
                 </field>
                 <field id="guest_name" translate="label" type="text" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
                     <label>Guest Name</label>
-                    <depends>
-                        <field id="enable">1</field>
-                    </depends>
                 </field>
                 <field id="intro_text" translate="label" type="textarea" sortOrder="50" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
                     <label>Intro Text</label>
@@ -46,9 +33,6 @@
                             If no content is added, nothing will be shown
                         ]]>
                     </comment>
-                    <depends>
-                        <field id="enable">1</field>
-                    </depends>
                 </field>
             </group>
             <group id="order_information_row" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
