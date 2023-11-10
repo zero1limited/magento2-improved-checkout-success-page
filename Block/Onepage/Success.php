@@ -93,6 +93,7 @@ class Success extends Template
 
     public function getShippingDetails()
     {
+	if($this->order->getShippingAddress()) : 
         return [
             'customerName' => $this->order->getShippingAddress()->getFirstname()
                 . ' ' . $this->order->getShippingAddress()->getLastname(),
@@ -103,6 +104,10 @@ class Success extends Template
             'postcode' => $this->order->getShippingAddress()->getPostcode(),
             'countryId' => $this->order->getShippingAddress()->getCountryId()
         ];
+	endif;
+
+
+	    
     }
 
     public function getBillingDetails()
