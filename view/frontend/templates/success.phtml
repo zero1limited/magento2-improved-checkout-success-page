@@ -3,7 +3,7 @@
 ?>
 <div id="zero1-advanced-success">
     <div class="content-block intro">
-        <h1><?php echo $block->getPageTitle(); ?></h1>
+        <h1 class="font-medium text-3xl mt-4"><?php echo $block->getPageTitle(); ?></h1>
         <?php if ($block->getIntroText() != '') : ?>
             <p><?php echo $block->escapeHtml($block->getIntroText()); ?></p>
         <?php endif; ?>
@@ -14,10 +14,11 @@
              id="rowitem-<?php echo $block->escapeHtml($block->getRowSortOrder('order_information_row')); ?>">
             <?php if ($block->getConfigFlag('order_information_row', 'enable_order_information') === true) : ?>
                 <div class="order">
-                    <h3><?php echo __('Order Details'); ?></h3>
-                    <p><?php echo __('Order Number: '); ?><span><?php echo $block->escapeHtml($block->getOrderDetails()['incrementId']) ?></span></p>
-                    <p><?php echo __('Order Total: '); ?><span><?php echo $block->escapeHtml($block->getOrderDetails()['baseGrandTotal']) ?></span></p>
-                    <p><?php echo __('Order Date: '); ?><span><?php echo $block->escapeHtml($block->getOrderDetails()['createdAt']) ?></span></p>
+                    <h3 class="font-bold text-lg"><?php echo __('Order Details'); ?></h3>
+                    <p><?php echo __('Order Number: '); ?><span id="order-number"><?php echo $block->escapeHtml($block->getOrder()->getIncrementId()) ?></span></p>
+                    <p><?php echo __('Order Email: '); ?><span id="order-email"><?php echo $block->escapeHtml($block->getOrder()->getCustomerEmail()) ?></span></p>
+                    <p><?php echo __('Order Total: '); ?><span id="order-total"><?php echo $block->escapeHtml($block->getOrder()->formatPriceTxt($block->getOrder()->getGrandTotal())) ?></span></p>
+                    <p><?php echo __('Order Date: '); ?><span id="order-date"><?php echo $block->escapeHtml($block->formatDate($block->getOrder()->getCreatedAt(), \IntlDateFormatter::LONG)) ?></span></p>
                 </div>
             <?php endif; ?>
 
@@ -25,7 +26,7 @@
 
                 <?php if ($block->getShippingDetails()) : ?>
                     <div class="shipping">
-                        <h3><?php echo __('Shipping Details'); ?></h3>
+                        <h3 class="font-bold text-lg"><?php echo __('Shipping Details'); ?></h3>
                         <?php if ($block->getShippingDetails()['company']) : ?>
                             <p><?php echo $block->escapeHtml($block->getShippingDetails()['company']); ?></p>
                         <?php endif; ?>
@@ -47,7 +48,7 @@
 
             <?php if ($block->getConfigFlag('order_information_row', 'enable_billing_information') === true) : ?>
                 <div class="billing">
-                    <h3><?php echo __('Billing Details'); ?></h3>
+                    <h3 class="font-bold text-lg"><?php echo __('Billing Details'); ?></h3>
                     <?php if ($block->getBillingDetails()['company']) : ?>
                         <p><?php echo $block->escapeHtml($block->getBillingDetails()['company']); ?></p>
                     <?php endif; ?>
@@ -78,7 +79,7 @@
         <div class="content-block newsletter" id="rowitem-<?php echo $block->escapeHtml($block->getRowSortOrder('newsletter_row')); ?>">
             <div class="newsletter-wrap">
                 <?php if ($block->getNewsletterText() !== null) : ?>
-                    <h3><?php echo $block->escapeHtml($block->getNewsletterText()); ?></h3>
+                    <h3 class="font-bold text-lg"><?php echo $block->escapeHtml($block->getNewsletterText()); ?></h3>
                 <?php endif; ?>
                 <?php echo $block->getNewsletterBlock(); ?>
             </div>

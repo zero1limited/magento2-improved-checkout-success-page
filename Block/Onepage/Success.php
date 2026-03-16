@@ -60,6 +60,14 @@ class Success extends Template
         $this->store = $store;
     }
 
+	/**
+     * @return \Magento\Sales\Model\Order
+     */
+    public function getOrder()
+    {
+        return $this->order;
+    }
+
     public function getCustomerDetails()
     {
         return [
